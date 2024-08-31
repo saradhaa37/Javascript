@@ -1,23 +1,31 @@
-let map=new Map()
-map.set('name','sara')
-map.set('location','chennai')
-map.set('age',30)
-map.set('Married',true)
+let person=new Map()
 
-console.log(map.size)
+person.set('Name','Sara')
+person.set('Location','chennai')
+person.set('Age',30)
+person.set('Married',false)
 
-//Iterate map
+console.log(person)
 
-map.forEach((value,key)=>console.log(value+" "+key))
+console.log(person.size)
 
-map.delete('age')
+//check for particular key
+console.log(person.has('name'))
 
-console.log(map.size)
+//delete particular element
+person.delete('name')
 
-map.forEach((key,value)=>console.log(key+" "+value))
+console.log(person)
 
-//modifying map
+console.log(person.size)
 
-map.set('location','London')
-//map['location']='London'
-map.forEach((key,value)=>console.log(key+" "+value))
+console.log(person.has('name'))
+
+console.log()
+
+person.set('location','London')
+
+console.log(person)
+
+//print custom print of map
+person.forEach((key,value)=>console.log(value,key))
