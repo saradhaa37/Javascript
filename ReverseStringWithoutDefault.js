@@ -1,16 +1,9 @@
-let test="Hello"
+let test="Hello Sara"
+let testRev=""
 
-let testLength=test.length
-
-let newString=test.charAt(testLength-1)
-
-testLength=testLength-2
-
-while(testLength>=0)
+for(let i=test.length-1;i>=0;i--)
 {
-    
-    newString = newString+test.charAt(testLength)
-    testLength--
+    testRev+=test[i]
 }
 
-console.log(newString)
+console.log(testRev)
