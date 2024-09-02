@@ -14,6 +14,11 @@ for(let property in person)
 
 Object.keys(person).forEach((key,value)=>console.log(key+" "+person[key]))
 
+//ES6
+console.log("Using [key,value]")
+for(let [key,value] of Object.entries(person))
+    console.log(key+" "+person[key])
+
 //Check for particular condition
 //if age above 30 not eligible
 
