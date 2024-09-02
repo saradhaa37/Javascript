@@ -1,0 +1,13 @@
+const { start } = require("repl")
+
+let Number=5
+
+const countDown=(start,stop,step)=>
+Array.from(
+{length : (stop-start)/step +1},
+(value,index)=> stop--
+)
+
+let StopCount=countDown(1,5,1)
+
+console.log(StopCount)
